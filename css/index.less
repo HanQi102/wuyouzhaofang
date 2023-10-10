@@ -1,0 +1,315 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 去除ul/li默认小黑点 */
+ul li {
+    list-style: none;
+}
+
+/* 去除a链接下划线、默认颜色 */
+a {
+    text-decoration: none;
+    color: rgb(76, 74, 74);
+}
+
+/* 清除input框默认样式 */
+input {
+    outline: none;
+    padding-left: 10px;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+
+// 头部
+
+header {
+    // padding: 0 0 4rem 3rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    height: 7.5rem;
+    background-color: #ff8a00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 16rem;
+    }
+
+    .right {
+        display: flex;
+        width: 10rem;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 3rem;
+            height: 4rem;
+        }
+    }
+}
+
+// banner
+.banner {
+    width: 100%;
+    height: 30rem;
+    background: url(../image/index/banner.png) no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .search {
+        width: 80%;
+        height: 3.5rem;
+        padding-left: 3rem;
+        box-sizing: border-box;
+        // margin: 0 auto;
+        position: absolute;
+        bottom: 2rem;
+        left: 10%;
+        border-radius: .5rem;
+
+        background: url(../image/index/seach.jpg) no-repeat .6rem .6rem;
+        background-size: 2rem;
+        background-color: white;
+
+    }
+
+}
+
+// 二手房
+
+.house {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10rem;
+    background-color: #ff8a00;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        p {
+            margin-top: 1rem;
+            color: white;
+        }
+    }
+}
+
+// .banner2
+.banner2 {
+    width: 100%;
+    height: 29rem;
+    background: url(../image/index/banner2.png);
+    background-size: contain;
+    margin: 2rem 0;
+}
+
+// 热门房源
+.hot {
+    width: 100%;
+    height: 8rem;
+    background-color: #ff8a00;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3rem;
+
+    div {
+        h1 {
+            font-size: 2.3rem;
+        }
+
+        color: white;
+    }
+
+}
+
+// 房源列表
+.houseList {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+
+    li {
+        height: 18rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: #eb631f 2px solid;
+        margin: 0 2rem;
+
+        img {
+            width: 12rem;
+            height: 12rem;
+        }
+
+        .jieshao {
+            height: 12rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .js1,
+            .js2 {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .js1 {
+
+                span:nth-of-type(2) {
+                    color: #ff8a00;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+            }
+
+            .js2 {
+                span {
+                    color: gray;
+                }
+            }
+
+            .js3 {
+                span {
+                    color: #a0b5d4;
+                }
+            }
+        }
+    }
+
+    li:nth-of-type(3) {
+        border: none;
+    }
+
+}
+
+// 热门关注
+.rmgz {
+    .title {
+        height: 8rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        span {
+            display: inline-block;
+            width: 50%;
+            font-size: 2.6rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            background-color: #fff;
+            border-bottom: #ff8a00 1px solid;
+        }
+
+        .active {
+            color: #ff8a00;
+            border-bottom: 4px solid #ff8a00;
+        }
+    }
+}
+
+.lianjie {
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 1rem 0;
+
+    li {
+
+        width: 50%;
+        height: 3rem;
+        padding-left: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: rgb(165, 165, 165);
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.bottom {
+    width: 100%;
+    background-color: #2f3130;
+    // position: fixed;
+    // bottom: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: #919191;
+}
+
+.bottom p {
+    font-size: 1.4rem;
+}
+
+.top {
+    padding: 1rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(89, 89, 89);
+
+    a {
+        font-size: 1.4rem;
+        color: #919191;
+    }
+}
+
+.footer {
+    padding: 2rem;
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+}
+
+.client>.left,
+.client>.right {
+    display: flex;
+}
+
+.client>.left {
+    margin-right: 9rem;
+}
+
+.client img {
+    width: 2.5rem;
+    height: 2.9rem;
+    margin-right: 1rem;
+}
+
+.company {
+    margin-top: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.kong {
+    height: 18.4rem;
+}

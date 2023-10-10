@@ -1,0 +1,241 @@
+/* 清除默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 去除ul/li默认小黑点 */
+ul li {
+  list-style: none;
+}
+/* 去除a链接下划线、默认颜色 */
+a {
+  text-decoration: none;
+  color: #4c4a4a;
+}
+/* 清除input框默认样式 */
+input {
+  outline: none;
+  padding-left: 10px;
+}
+body {
+  background-color: #F5F5F5;
+}
+header {
+  padding-left: 4rem;
+  padding-right: 3rem;
+  height: 7.5rem;
+  background-color: #ff8a00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 16rem;
+}
+header .right {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  align-items: center;
+}
+header .right img {
+  width: 3rem;
+  height: 4rem;
+}
+.banner {
+  width: 100%;
+  height: 30rem;
+  background: url(../image/index/banner.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.banner .search {
+  width: 80%;
+  height: 3.5rem;
+  padding-left: 3rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 2rem;
+  left: 10%;
+  border-radius: 0.5rem;
+  background: url(../image/index/seach.jpg) no-repeat 0.6rem 0.6rem;
+  background-size: 2rem;
+  background-color: white;
+}
+.house {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10rem;
+  background-color: #ff8a00;
+}
+.house .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.house .item img {
+  width: 6rem;
+  height: 6rem;
+}
+.house .item p {
+  margin-top: 1rem;
+  color: white;
+}
+.banner2 {
+  width: 100%;
+  height: 29rem;
+  background: url(../image/index/banner2.png);
+  background-size: contain;
+  margin: 2rem 0;
+}
+.hot {
+  width: 100%;
+  height: 8rem;
+  background-color: #ff8a00;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3rem;
+}
+.hot div {
+  color: white;
+}
+.hot div h1 {
+  font-size: 2.3rem;
+}
+.houseList {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.houseList li {
+  height: 18rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: #eb631f 2px solid;
+  margin: 0 2rem;
+}
+.houseList li img {
+  width: 12rem;
+  height: 12rem;
+}
+.houseList li .jieshao {
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.houseList li .jieshao .js1,
+.houseList li .jieshao .js2 {
+  display: flex;
+  justify-content: space-between;
+}
+.houseList li .jieshao .js1 span,
+.houseList li .jieshao .js2 span {
+  font-size: 1.4rem;
+}
+.houseList li .jieshao .js1 span:nth-of-type(2) {
+  color: #ff8a00;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.houseList li .jieshao .js2 span {
+  color: gray;
+}
+.houseList li .jieshao .js3 span {
+  color: #a0b5d4;
+}
+.houseList li:nth-of-type(3) {
+  border: none;
+}
+.rmgz .title {
+  height: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rmgz .title span {
+  display: inline-block;
+  width: 50%;
+  font-size: 2.6rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  background-color: #fff;
+  border-bottom: #ff8a00 1px solid;
+}
+.rmgz .title .active {
+  color: #ff8a00;
+  border-bottom: 4px solid #ff8a00;
+}
+.lianjie {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 1rem 0;
+}
+.lianjie li {
+  width: 50%;
+  height: 3rem;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.lianjie li a {
+  color: #a5a5a5;
+  font-size: 1.5rem;
+}
+.bottom {
+  width: 100%;
+  background-color: #2f3130;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #919191;
+}
+.bottom p {
+  font-size: 1.4rem;
+}
+.top {
+  padding: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #595959;
+}
+.top a {
+  font-size: 1.4rem;
+  color: #919191;
+}
+.footer {
+  padding: 2rem;
+}
+.client {
+  display: flex;
+  justify-content: center;
+}
+.client > .left,
+.client > .right {
+  display: flex;
+}
+.client > .left {
+  margin-right: 9rem;
+}
+.client img {
+  width: 2.5rem;
+  height: 2.9rem;
+  margin-right: 1rem;
+}
+.company {
+  margin-top: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+.kong {
+  height: 18.4rem;
+}
