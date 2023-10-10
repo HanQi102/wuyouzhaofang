@@ -1,0 +1,118 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 去除ul/li默认小黑点 */
+ul li {
+    list-style: none;
+}
+
+/* 去除a链接下划线、默认颜色 */
+a {
+    text-decoration: none;
+    color: rgb(76, 74, 74);
+}
+
+/* 清除input框默认样式 */
+input {
+    outline: none;
+    padding-left: 10px;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+
+// 头部
+
+header {
+    // padding: 0 0 4rem 3rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    height: 7.5rem;
+    background-color: #ff8a00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 16rem;
+    }
+
+    .right {
+        display: flex;
+        width: 10rem;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 3rem;
+            height: 4rem;
+        }
+    }
+}
+
+// 导航
+.nav {
+    background-color: #fff;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 1px solid rgb(194, 193, 193);
+
+    a {
+        font-size: 1.4rem;
+    }
+
+    a:nth-of-type(1) {
+        color: black;
+        font-weight: 600;
+    }
+
+    span {
+        padding: 0 .5rem;
+    }
+
+
+}
+
+.text {
+    li {
+        border-bottom: 1px solid gray;
+        position: relative;
+
+        input {
+            border: none;
+            width: 100%;
+            height: 4.5rem;
+            box-sizing: border-box;
+        }
+
+        .send {
+            position: absolute;
+            top: 11%;
+            right: 10%;
+            background-color: #fff;
+            height: 3.5rem;
+            width: 9rem;
+            border: 1px solid gray;
+        }
+    }
+}
+
+.register {
+    width: 80%;
+    height: 4.5rem;
+    border: none;
+    background-color: #ff8a00;
+    margin-top: 2rem;
+    margin-left: 10%;
+    color: white;
+    font-size: 1.6rem;
+}
