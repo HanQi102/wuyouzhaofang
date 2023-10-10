@@ -12,14 +12,14 @@ header {
 
 }
 
-.left>img {
+header.left>img {
     width: 15rem;
     margin-top: .5rem;
     margin-left: 4rem;
 }
 
-.right>img {
-    width: 3rem;
+header.right>img {
+    width: 30px;
     margin-top: 1rem;
     margin-right: 2rem;
 }

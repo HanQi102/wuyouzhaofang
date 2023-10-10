@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #919191;
+    font-size: 1.6rem;
+
+}
+
+.box {
+    width: 100%;
+    background-color: #2f3130;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: #919191;
+}
+
+.box p {
+    font-size: 1.4rem;
+}
+
+.top {
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(89, 89, 89);
+}
+
+.footer {
+    padding: 2rem;
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+}
+
+.client>.left,
+.client>.right {
+    display: flex;
+}
+
+.client>.left {
+    margin-right: 9rem;
+}
+
+.client img {
+    width: 2.5rem;
+    height: 2.9rem;
+    margin-right: 1rem;
+}
+
+.company {
+    margin-top: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
