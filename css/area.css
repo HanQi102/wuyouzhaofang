@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #454545;
+}
+.box {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.box .search p {
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.box .search p input {
+  outline: none;
+  line-height: 4rem;
+  border: none;
+  font-size: 1.6rem;
+  color: #666;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+.box .search p button {
+  background-color: #fff;
+  position: absolute;
+  top: 0.9rem;
+  right: 4rem;
+  border: none;
+  padding-left: 1rem;
+  border-left: 0.1rem solid gray;
+  box-sizing: border-box;
+}
+.box .search p button img {
+  width: 2rem;
+  height: 2rem;
+}
+nav .list1 {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  border-bottom: 0.1rem solid #e3e3e3;
+}
+nav .list1 li a {
+  font-size: 1.4rem;
+}
+nav .list2 {
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+}
+nav .list2 li {
+  display: flex;
+  border-bottom: 0.1rem solid gold;
+  padding: 1.6rem 0;
+  box-sizing: border-box;
+}
+nav .list2 li .left {
+  margin-right: 1.6rem;
+}
+nav .list2 li .left img {
+  width: 12rem;
+  height: 12rem;
+}
+nav .list2 li .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+nav .list2 li .right h3 {
+  font-size: 1.6rem;
+}
+nav .list2 li .right p {
+  color: #b5b5b5;
+}
+nav .list2 li .right span {
+  font-weight: bold;
+  color: #FF8A00;
+}
