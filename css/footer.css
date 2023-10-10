@@ -13,8 +13,6 @@ a {
 .box {
     width: 100%;
     background-color: #2f3130;
-    position: fixed;
-    bottom: 0;
     padding: 0 10px;
     box-sizing: border-box;
     color: #919191;
@@ -58,8 +56,4 @@ a {
     margin-top: 1.6rem;
     line-height: 2.4rem;
     text-align: center;
-}
-
-.kong {
-    height: 18.4rem;
 }
