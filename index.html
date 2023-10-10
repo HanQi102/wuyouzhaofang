@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title>首页</title>
         <link rel="stylesheet" href="./css/index.css">
         <script src=""></script>
     </head>
@@ -178,6 +178,19 @@
 
         </div>
         <!-- <div class="kong"></div> -->
+
+
+        <!-- 底部固定定位 -->
+
+        <div class="xiazai">
+            <img class="close" src="./image/index/close.png" alt="">
+            <img class="download" src="./image/index/download.png" alt="">
+            <div>
+                <h1>找房无忧</h1>
+                <h2>市场行情，一手掌握！</h2>
+            </div>
+            <p>免费下载</p>
+        </div>
     </body>
 
 </html>
@@ -185,3 +198,14 @@
 <script src="./js/jquery-1.12.4.js"></script>
 
 <script src="./js/remstyle.js"></script>
+
+<script>
+    var close = document.querySelector( '.close' )
+    var xiaZai = document.querySelector( '.xiazai' )
+    close.addEventListener( 'click', function ()
+    {
+
+        xiaZai.classList.add( 'none' )
+    } )
+    // console.log( xiaZai );
+</script>

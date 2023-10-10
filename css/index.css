@@ -92,6 +92,7 @@ header .right img {
 }
 .hot {
   width: 100%;
+  box-sizing: border-box;
   height: 8rem;
   background-color: #ff8a00;
   display: flex;
@@ -238,4 +239,40 @@ header .right img {
 }
 .kong {
   height: 18.4rem;
+}
+.xiazai {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: #080808c0;
+  position: fixed;
+  bottom: 0;
+}
+.xiazai .download {
+  width: 4rem;
+  height: 4rem;
+}
+.xiazai .close {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+.xiazai p {
+  background-color: #ff8a00;
+  font-size: 1.8rem;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.none {
+  display: none;
 }
