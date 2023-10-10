@@ -15,7 +15,6 @@ a {
 .box .search p {
   position: relative;
   background: #fff;
-  -webkit-box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.1);
 }
 .box .search p input {
   outline: none;
@@ -82,4 +81,7 @@ nav .list2 li .right p {
 nav .list2 li .right span {
   font-weight: bold;
   color: #FF8A00;
+}
+nav .list2 li:last-child {
+  border-bottom: none;
 }
