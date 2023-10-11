@@ -12,6 +12,18 @@ a {
 ul {
   list-style: none;
 }
+.index {
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 0.1rem solid #d8d8d8;
+}
+.index a {
+  color: #424242;
+  font-size: 1.4rem;
+}
+.index a:first-child {
+  font-weight: bold;
+}
 .location {
   box-sizing: border-box;
   width: 100%;
@@ -27,7 +39,10 @@ ul {
 }
 .box .search p {
   position: relative;
-  background: #fff;
+  background-color: white;
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0.4rem;
+  padding-left: 0.2rem;
 }
 .box .search p input {
   outline: none;
@@ -42,10 +57,10 @@ ul {
   background-color: #fff;
   position: absolute;
   top: 0.9rem;
-  right: 4rem;
+  right: 2rem;
   border: none;
   padding-left: 1rem;
-  border-left: 0.1rem solid gray;
+  border-left: 0.2rem solid gray;
   box-sizing: border-box;
 }
 .box .search p button img {
@@ -239,24 +254,40 @@ nav .list1 .active span {
   margin-right: 1.6rem;
 }
 .list2 li .left img {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
 }
 .list2 li .right {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   font-size: 1.4rem;
 }
 .list2 li .right h3 {
   font-size: 1.6rem;
 }
-.list2 li .right p {
-  color: #b5b5b5;
+.list2 li .right h4 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
-.list2 li .right span {
+.list2 li .right div {
+  width: 100%;
+  align-items: center;
+}
+.list2 li .right div span {
+  width: 30%;
+  padding: 0.3rem;
+  color: #378a57;
+  border: 1px solid #378a57;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+.list2 li .right div span:last-child {
+  float: right;
   font-weight: bold;
   color: #FF8A00;
+  border: none;
 }
 .list2 li:last-child {
   border-bottom: none;
