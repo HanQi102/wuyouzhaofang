@@ -14,7 +14,7 @@ a {
     width: 100%;
     background-color: #2f3130;
     padding: 0 10px;
-    bottom-sizing: border-bottom;
+    box-sizing: border-box;
     color: #919191;
 }
 
