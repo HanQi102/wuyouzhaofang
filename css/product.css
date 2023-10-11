@@ -54,6 +54,7 @@ ul {
 }
 nav {
   background-color: white;
+  z-index: 3;
 }
 nav .list1 {
   list-style: none;
@@ -211,6 +212,7 @@ nav .list1 .active span {
   color: white;
   font-weight: bold;
   background-color: #ff8a00;
+  margin-bottom: 1.5rem;
 }
 .someList .location {
   box-sizing: border-box;
@@ -218,6 +220,7 @@ nav .list1 .active span {
   position: fixed;
   top: 4.4rem;
   background-color: white;
+  z-index: 3;
 }
 .someList .active1 {
   display: none;
@@ -257,4 +260,12 @@ nav .list1 .active span {
 }
 .list2 li:last-child {
   border-bottom: none;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: #0a0a0a59;
+  z-index: 2 !important;
+  position: fixed;
+  top: 0;
 }
