@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #F5F5F5;
+}
+a {
+  text-decoration: none;
+  color: #454545;
+}
+ul {
+  list-style: none;
+}
+.location {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+.box {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.box .search p {
+  position: relative;
+  background: #fff;
+}
+.box .search p input {
+  outline: none;
+  line-height: 4rem;
+  border: none;
+  font-size: 1.6rem;
+  color: #666;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+.box .search p button {
+  background-color: #fff;
+  position: absolute;
+  top: 0.9rem;
+  right: 4rem;
+  border: none;
+  padding-left: 1rem;
+  border-left: 0.1rem solid gray;
+  box-sizing: border-box;
+}
+.box .search p button img {
+  width: 2rem;
+  height: 2rem;
+}
+nav {
+  background-color: white;
+}
+nav .list1 {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid #e3e3e3;
+}
+nav .list1 li a {
+  font-size: 1.8rem;
+  position: relative;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+nav .list1 li a span {
+  border-top: 5px solid #ccc;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  position: absolute;
+  top: 0.4rem;
+  right: -1.7rem;
+}
+nav .list1 .active a {
+  color: #ff8a00;
+}
+nav .list1 .active span {
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #ff8a00;
+  border-left: 5px solid transparent;
+  top: 0.02rem;
+}
+.someList {
+  background-color: white;
+}
+.someList .area {
+  display: flex;
+  line-height: 4rem;
+}
+.someList .area .title {
+  flex: 1;
+  background-color: #F0F0F0;
+}
+.someList .area .title p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.someList .area .title p:first-child {
+  color: #ff8a00;
+  background-color: white;
+}
+.someList .area .hideList {
+  flex: 3;
+  color: #3c3c3c;
+  font-size: 1.4rem;
+}
+.someList .area .hideList ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.someList .area .hideList ul li {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.someList .area .hideList ul li:nth-child(2),
+.someList .area .hideList ul li:nth-child(5) {
+  color: #ff8a00;
+}
+.someList .price ul {
+  padding: 0 3rem;
+  line-height: 4rem;
+}
+.someList .price ul li {
+  width: 100%;
+  color: #666;
+  font-size: 1.6rem;
+  border-bottom: 0.1rem solid #e3e3e3;
+}
+.someList .price ul li:last-child {
+  border-bottom: none;
+}
+.someList .houseType ul {
+  padding: 0 3rem;
+  line-height: 4rem;
+}
+.someList .houseType ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #2a2a2a;
+  font-size: 1.6rem;
+  border-bottom: 0.1rem solid #e3e3e3;
+}
+.someList .houseType ul li span {
+  width: 1.5rem;
+  height: 1.4rem;
+  border: 0.1rem solid gray;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+}
+.someList .houseType ul li:nth-of-type(2) span {
+  background: url(../image/SecondHandList/ok.png) no-repeat;
+  background-size: 100%;
+  border: 0.1rem solid #ff8a00;
+}
+.someList .houseType ul li:last-child {
+  border-bottom: none;
+}
+.someList .more {
+  padding: 0 3rem;
+}
+.someList .more ul {
+  padding-bottom: 1rem;
+}
+.someList .more ul:last-child {
+  border-bottom: none;
+}
+.someList .more ul li {
+  border-bottom: 0.1rem solid #e3e3e3;
+  overflow: hidden;
+}
+.someList .more ul li h3 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+.someList .more ul li ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.someList .more ul li ul li {
+  width: 22%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border: 0.1rem solid #e3e3e3;
+  margin-right: 0.7rem;
+  margin-bottom: 1rem;
+}
+.someList .more ul li a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 10px;
+  text-align: center;
+}
+.someList button {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #ff8a00;
+}
+.someList .location {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 4.4rem;
+  background-color: white;
+}
+.someList .active1 {
+  display: none;
+}
+.list2 {
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+}
+.list2 li {
+  display: flex;
+  border-bottom: 0.1rem solid gold;
+  padding: 1.6rem 0;
+  box-sizing: border-box;
+}
+.list2 li .left {
+  margin-right: 1.6rem;
+}
+.list2 li .left img {
+  width: 12rem;
+  height: 12rem;
+}
+.list2 li .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.list2 li .right h3 {
+  font-size: 1.6rem;
+}
+.list2 li .right p {
+  color: #b5b5b5;
+}
+.list2 li .right span {
+  font-weight: bold;
+  color: #FF8A00;
+}
+.list2 li:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+    color: #454545;
+}
+
+ul {
+    list-style: none;
+}
+
+.location {
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+.box {
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    .search {
+        p {
+            position: relative;
+            background: #fff;
+
+            input {
+                outline: none;
+                line-height: 4rem;
+                border: none;
+                font-size: 1.6rem;
+                color: #666;
+                padding-left: 2rem;
+                box-sizing: border-box;
+            }
+
+            button {
+                background-color: #fff;
+                position: absolute;
+                top: .9rem;
+                right: 4rem;
+                border: none;
+                padding-left: 1rem;
+                border-left: .1rem solid gray;
+                box-sizing: border-box;
+
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+nav {
+    background-color: white;
+
+    .list1 {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+        border-bottom: .1rem solid rgb(227, 227, 227);
+
+        li {
+
+            a {
+                font-size: 1.8rem;
+                position: relative;
+                font-weight: bold;
+                color: #4e4e4e;
+
+                span {
+                    border-top: 5px solid #ccc;
+                    border-right: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    position: absolute;
+                    top: 0.4rem;
+                    right: -1.7rem;
+                }
+            }
+        }
+
+        .active {
+            a {
+                color: #ff8a00;
+            }
+
+            span {
+                border-top: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 5px solid #ff8a00;
+                border-left: 5px solid transparent;
+                top: 0.02rem;
+            }
+        }
+    }
+}
+
+.someList {
+    background-color: white;
+
+    .area {
+        display: flex;
+        line-height: 4rem;
+
+        .title {
+            flex: 1;
+            background-color: #F0F0F0;
+
+            p {
+                font-size: 1.8rem;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+
+                &:first-child {
+                    color: #ff8a00;
+                    background-color: white;
+                }
+            }
+
+
+        }
+
+        .hideList {
+            flex: 3;
+            color: #3c3c3c;
+            font-size: 1.4rem;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+
+                    &:nth-child(2),
+                    &:nth-child(5) {
+                        color: #ff8a00;
+                    }
+                }
+            }
+        }
+    }
+
+    .price {
+        ul {
+            padding: 0 3rem;
+            line-height: 4rem;
+
+            li {
+                width: 100%;
+                color: #666;
+                font-size: 1.6rem;
+                border-bottom: .1rem solid rgb(227, 227, 227);
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    .houseType {
+        ul {
+            padding: 0 3rem;
+            line-height: 4rem;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                color: #2a2a2a;
+                font-size: 1.6rem;
+                border-bottom: .1rem solid rgb(227, 227, 227);
+
+                span {
+                    width: 1.5rem;
+                    height: 1.4rem;
+                    border: .1rem solid gray;
+                    margin-top: 1rem;
+                    margin-right: 1.5rem;
+
+
+
+
+                }
+
+                &:nth-of-type(2) span {
+                    background: url(../image/SecondHandList/ok.png) no-repeat;
+                    background-size: 100%;
+
+                    border: .1rem solid #ff8a00;
+
+                }
+
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    .more {
+
+        padding: 0 3rem;
+
+        ul {
+            padding-bottom: 1rem;
+
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            li {
+                border-bottom: .1rem solid rgb(227, 227, 227);
+                overflow: hidden;
+
+                h3 {
+                    font-size: 1.6rem;
+                    margin-top: 1rem;
+                    margin-bottom: .8rem;
+                }
+
+                ul {
+                    display: flex;
+                    // justify-content: space-between;
+                    flex-wrap: wrap;
+                    font-size: 1.2rem;
+                    text-align: center;
+
+                    li {
+                        width: 22%;
+                        height: 2.5rem;
+                        line-height: 2.5rem;
+                        border: .1rem solid rgb(227, 227, 227);
+                        margin-right: .7rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                a {
+                    display: block;
+                    font-size: 1.2rem;
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+        }
+
+
+    }
+
+    button {
+        width: 100%;
+        height: 4rem;
+        border: none;
+        color: white;
+        font-weight: bold;
+        background-color: #ff8a00;
+    }
+
+    .location {
+        box-sizing: border-box;
+        width: 100%;
+        position: fixed;
+        top: 4.4rem;
+        background-color: white;
+    }
+
+    .active1 {
+        display: none;
+
+    }
+}
+
+.list2 {
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+
+    li {
+        display: flex;
+        border-bottom: .1rem solid gold;
+        padding: 1.6rem 0;
+        box-sizing: border-box;
+
+        .left {
+            margin-right: 1.6rem;
+
+            img {
+                width: 12rem;
+                height: 12rem;
+            }
+        }
+
+        .right {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 1.4rem;
+
+            h3 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                color: #b5b5b5;
+
+            }
+
+            span {
+                // margin-left: .5rem;
+                font-weight: bold;
+                color: #FF8A00;
+            }
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    // li:last-child {
+    //     border-bottom: none;
+    // }
+
+}
+
+// .mask {
+// width: 100vh;
+// height: 100vh;
+// background-color: #0a0a0a2c;
+// z-index: 9 !important;
+// }
