@@ -28,48 +28,12 @@ for ( var i = 0; i < login.length; i++ )
 // var input = document.querySelectorAll( 'input' )
 var login1 = document.querySelector( '.login1' )
 var phone = document.querySelector( '.phone' )
+var phone1 = document.querySelector( '.phone1' )
+var login2 = document.querySelector( '.login2' )
+
 var mima = document.querySelector( '.mima' )
 var send = document.querySelector( '.send' )
 var yzm = document.querySelector( '.yzm' )
-
-
-
-// 发送验
-send.addEventListener( 'click', function ()
-{
-
-    // var reg = /^[1-9]\d{10}$/;
-
-    var i = 60;
-    var timer;
-
-    clearInterval( timer );
-    timer = setInterval( function ()
-    {
-        i--;
-        send.innerHTML = i + '秒后重新发送';
-        if ( i == 0 )
-        {
-            send.innerHTML = '重新获取验证码';
-            send.disabled = false
-        } else
-        {
-            send.disabled = true
-        }
-
-    }, 1000 )
-    num = parseInt( Math.random() * 10000 )
-    setTimeout( function ()
-    {
-        alert( num )
-        console.log( num );
-    }, 6000 )
-}
-)
-
-
-
-
 
 login1.addEventListener( 'click', function ()
 {
@@ -124,15 +88,51 @@ login1.addEventListener( 'click', function ()
     }
 } )
 
-// console.log( phone.value );
-
-
-login1.addEventListener( 'click', function ()
+// 验证登录
+// 发送验证码
+send.addEventListener( 'click', function ()
 {
+    // var reg = /^[1-9]\d{10}$/;
+    if ( phone1.value != getCookie( 'phone' ) )
+    {
+        alert( '请输入已注册手机号' )
+        return true
+    } else
+    {
+        var i = 60;
+        var timer;
+
+        clearInterval( timer );
+        timer = setInterval( function ()
+        {
+            i--;
+            send.innerHTML = i + '秒后重新发送';
+            if ( i == 0 )
+            {
+                send.innerHTML = '重新获取验证码';
+                send.disabled = false
+            } else
+            {
+                send.disabled = true
+            }
+
+        }, 1000 )
+        num = parseInt( Math.random() * 10000 )
+        setTimeout( function ()
+        {
+            alert( num )
+            console.log( num );
+        }, 6000 )
+
+    }
+} )
+login2.addEventListener( 'click', function ()
+{
+
+
     // 数字验证
     if ( yzm.value == num )
     {
-        location.href = ( "./index.html" )
     } else if ( yzm.value == '' )
     {
         alert( '数字验证不能为空' )
@@ -143,5 +143,19 @@ login1.addEventListener( 'click', function ()
         return true
     }
 
+
+    //  向cookie存值
+    // if ( login2 )
+    // {
+    //     setCookie( 'phone', phone.value )
+    //     // setCookie( 'user', input[ 3 ].value )
+    //     setCookie( 'pwd', mima.value )
+    // }
+
+
+    alert( '登录成功！' )
+    // var form_ = document.querySelector('form')
+    // form_.setAttribute("action", './login.html');
+    location.href = ( "../index.html" )
 
 } )
