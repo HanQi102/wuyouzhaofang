@@ -62,28 +62,6 @@ header .right img {
 .nav span {
   padding: 0 0.5rem;
 }
-.title {
-  background-color: #fff;
-  height: 4.7rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.title span {
-  display: inline-block;
-  width: 50%;
-  font-size: 1.5rem;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  background-color: #fff;
-  border-bottom: #ff8a00 1px solid;
-}
-.title .active {
-  border-bottom: 4px solid #ff8a00;
-}
 .text li {
   border-bottom: 1px solid gray;
   position: relative;
@@ -103,7 +81,7 @@ header .right img {
   width: 9rem;
   border: 1px solid gray;
 }
-.login1 {
+.register {
   width: 80%;
   height: 4.5rem;
   border: none;
@@ -112,15 +90,4 @@ header .right img {
   margin-left: 10%;
   color: white;
   font-size: 1.6rem;
-}
-.forget {
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-.forget a {
-  font-size: 1.3rem;
-}
-.forget a:nth-of-type(1) {
-  color: #ff8a00;
 }

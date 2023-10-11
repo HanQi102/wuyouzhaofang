@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>登录</title>
-        <link rel="stylesheet" href="./css/login.css">
+        <title>注册</title>
+        <link rel="stylesheet" href="./css/register.css">
         <script src=""></script>
     </head>
 
@@ -19,47 +19,24 @@
                 <a href="#"><img src="./image/index/xiazai.jpg" alt=""></a>
             </div>
         </header>
-        <!-- 导航 -->
         <div class="nav">
             <a href="./index.html">首页</a><span>></span>
             <a href="#">我的</a><span>></span>
-            <a href="./login.html">登录</a>
+            <a href="./register.html">注册</a>
         </div>
-        <!-- 登录部分 -->
-        <div class="title">
-            <span class="login active">普通登录</span>
-            <span class="login">验证码快捷登录</span>
-        </div>
-        <!-- 第一个普通登录 -->
         <ul class="text">
-            <li>
-                <input class="phone" type="text" placeholder="请输入手机号" required>
-
-            </li>
-
-            <li>
-                <input class="mima" type="password" placeholder="请输入密码" required>
-            </li>
-        </ul>
-
-        <!-- 第二个验证码登录 -->
-
-        <ul class="text" style="display: none;">
             <li>
                 <input class="phone" type="text" placeholder="请输入手机号" required>
                 <button class="send">发送验证码</button>
             </li>
             <li><input class="yzm" type="text" placeholder="请输入短信中的验证码" required></li>
-
+            <li>
+                <input class="mima" type="password" placeholder="请输入新密码" required>
+            </li>
         </ul>
 
+        <button class="register">立即注册</button>
 
-        <button class="login1">立即登录</button>
-
-        <div class="forget">
-            <a href="./register.html">立即注册</a>
-            <a href="#">忘记密码</a>
-        </div>
 
     </body>
 
@@ -67,5 +44,7 @@
 <script src="./js/jquery-1.12.4.js"></script>
 
 <script src="./js/remstyle.js"></script>
-<script src="./js/login.js"></script>
+
+<script src="./js/register.js"></script>
+
 <script src="./js/mycookie.js"></script>
