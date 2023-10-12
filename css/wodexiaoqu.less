@@ -1,0 +1,111 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 去除ul/li默认小黑点 */
+ul li {
+    list-style: none;
+}
+
+/* 去除a链接下划线、默认颜色 */
+a {
+    text-decoration: none;
+    color: rgb(76, 74, 74);
+}
+
+/* 清除input框默认样式 */
+input {
+    outline: none;
+    // padding-left: 10px;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+
+// 头部
+
+header {
+    // padding: 0 0 4rem 3rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    height: 7.5rem;
+    background-color: #ff8a00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 16rem;
+    }
+
+    .right {
+        display: flex;
+        width: 10rem;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 3rem;
+            height: 4rem;
+        }
+    }
+}
+
+.nav {
+    height: 4rem;
+    line-height: 4rem;
+    background: #ffffff;
+    border-bottom: 1px solid #c5c5c5;
+    padding-left: 2.5rem;
+    font-size: 1.4rem;
+}
+
+ul {
+    padding: 0 2.5rem;
+
+    li {
+
+        display: flex;
+        align-items: center;
+        padding: 2.5rem 0;
+        border-bottom: 1px solid #ff8a00;
+
+        img {
+            width: 33.333%;
+            height: 10rem;
+        }
+
+        .tit {
+            // height: auto;
+            width: 33.333%;
+            margin-left: 1rem;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: stretch;
+
+            h2 {
+                font-size: 1.7rem;
+                line-height: 2.5rem;
+            }
+
+            p {
+                line-height: 2.5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        >p {
+            width: 33.333%;
+            color: #ff8a00;
+            font-size: 1.6rem;
+        }
+    }
+
+    li:nth-of-type(4) {
+        border-bottom: none;
+    }
+}

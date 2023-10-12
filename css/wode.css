@@ -1,0 +1,96 @@
+/* 清除默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 去除ul/li默认小黑点 */
+ul li {
+  list-style: none;
+}
+/* 去除a链接下划线、默认颜色 */
+a {
+  text-decoration: none;
+  color: #4c4a4a;
+}
+/* 清除input框默认样式 */
+input {
+  outline: none;
+}
+body {
+  background-color: #F5F5F5;
+}
+header {
+  padding-left: 4rem;
+  padding-right: 3rem;
+  height: 7.5rem;
+  background-color: #ff8a00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 16rem;
+}
+header .right {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  align-items: center;
+}
+header .right img {
+  width: 3rem;
+  height: 4rem;
+}
+.nav {
+  height: 4rem;
+  line-height: 4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #c5c5c5;
+  padding-left: 2.5rem;
+  font-size: 1.4rem;
+}
+.photo {
+  height: 16.8rem;
+  background: url(../image/my/bg2.png);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.photo img {
+  width: 5.4rem;
+  height: 5.4rem;
+}
+ul {
+  display: flex;
+  flex-flow: column;
+}
+ul li {
+  background: #ffffff;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+ul li a {
+  display: block;
+  height: 5rem;
+  line-height: 5rem;
+  background: url(../image/my/right.png) no-repeat right;
+  background-size: 0.8rem;
+  border-bottom: 1px solid #c5c5c5;
+  font-size: 1.4rem;
+}
+.btn {
+  padding: 5rem 3rem;
+  display: flex;
+}
+.btn a {
+  display: block;
+  width: 31.5rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #ffffff;
+  color: #ff8a00;
+  border: 1px solid #dcdcdc;
+  font-size: 1.4rem;
+}

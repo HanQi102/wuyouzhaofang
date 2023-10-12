@@ -1,0 +1,121 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 去除ul/li默认小黑点 */
+ul li {
+    list-style: none;
+}
+
+/* 去除a链接下划线、默认颜色 */
+a {
+    text-decoration: none;
+    color: rgb(76, 74, 74);
+}
+
+/* 清除input框默认样式 */
+input {
+    outline: none;
+    // padding-left: 10px;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+
+// 头部
+
+header {
+    // padding: 0 0 4rem 3rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    height: 7.5rem;
+    background-color: #ff8a00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 16rem;
+    }
+
+    .right {
+        display: flex;
+        width: 10rem;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 3rem;
+            height: 4rem;
+        }
+    }
+}
+
+.nav {
+    height: 4rem;
+    line-height: 4rem;
+    background: #ffffff;
+    border-bottom: 1px solid #c5c5c5;
+    padding-left: 2.5rem;
+    font-size: 1.4rem;
+}
+
+form {
+    ul {
+        height: 17rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        li {
+            height: 5.3rem;
+            border-bottom: 1px solid #dcdcdc;
+
+            >input {
+                border: none;
+                outline: none;
+                width: 100%;
+                height: 5.3rem;
+                line-height: 5.3rem;
+                padding-left: 2.5rem;
+            }
+        }
+
+        .mima {
+            position: relative;
+
+            #dian {
+                // flex-grow: 1;
+                position: absolute;
+                top: 0.8rem;
+                right: 1.6rem;
+                text-align: center;
+                background-color: white;
+                border: 1px solid #dcdcdc;
+                padding: 0.8rem 1rem;
+            }
+        }
+
+
+    }
+
+    .zhuce {
+        display: flex;
+        justify-content: center;
+        // width: 30rem;
+        width: 100%;
+        height: 4.8rem;
+        background: #ff8a00;
+        outline: none;
+        border: none;
+        color: #ffffff;
+        font-size: 1.8rem;
+        // margin-top: 1.4rem;
+        // margin-left: 1rem;
+        padding: 1.5rem 1rem;
+    }
+}
